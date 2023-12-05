@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Meredith's Website</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.cdnfonts.com/css/heebo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kumbh Sans" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Heebo", sans-serif;
+        background-color: var(--Charcoal);
+      }
+
+      :root {
+        --Navy: #28354A;
+        --Powder: #829FBF;
+        --Charcoal: #2E2C2D;
+        --Beige: #F3EED8;
+        --Mustard: #E7B925;
+      }
+
+      h1 {
+        color: var(--Beige);
+        font-size: 325px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 20px;
+        text-align: center;
+        padding: 225px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+      }
+
+      h3 {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 50px;
+      }
+
+      h4 {
+        font-size: 250px;
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 50px;
+      }
+
+      h5 {
+        font-size: 50px;
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-bottom: 0px;
+      }
+
+      h6 {
+        font-size: 60px;
+        text-align: left;
+        float: left;
+        display: inline;
+        margin: 0px;
+        padding-left: 50px;
+      }
+
+      p {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        padding-right: 100px;
+        text-align: left;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        background-color: var(--Beige);
+      }
+
+      li {
+        display: inline;
+        float: left;
+      }
+
+      li a {
+        display: block;
+        padding: 12px;
+        margin-left: 200px;
+        text-decoration: none;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: var(--Charcoal);
+        font-weight: bold;
+      }
+
+      /* visited link */
+      a:visited {
+        color: var(--Mustard);
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: var(--Powder);
+      }
+
+      /* selected link */
+      a:active {
+        color: var(--Mustard);
+      }
+
+      #containerMeredith {
+        background-color: transparent;
+        width: 100%;
+        height: 300;
+        position: relative;
+        padding-top: 10px;
+        ;
+      }
+
+      #imageMere {
+        background-color: transparent;
+        float: middle;
+        position: absolute;
+        top: 0px;
+        padding: 450px;
+        padding-top: 225px;
+        padding-bottom: 100px;
+      }
+
+      #containerThisIsMe {
+        width: 100%;
+        height: 90px;
+      }
+
+      #blockB {
+        width: 66.66%;
+        height: 800px;
+        background-color: var(--Navy);
+        float: left;
+      }
+
+      #blockC {
+        width: 33.33%;
+        height: 1000px;
+        background-color: var(--Mustard);
+        float: right;
+        margin-top: 200px;
+      }
+
+      #containerPhotos {
+        width: 100%;
+        height: 1600px;
+        background-color: transparent;
+        clear: both;
+        position: relative;
+      }
+
+      #blockD,
+      #blockE,
+      #blockF,
+      #blockG,
+      #blockH,
+      #blockI {
+        background-color: transparent;
+        width: 49%;
+        height: 49%;
+        display: inline;
+        float: left;
+        padding: 5px;
+      }
+
+      #containerWhatsNew {
+        width: 100%;
+        height: 2400px;
+        background-color: white;
+        clear: both;
+        position: relative;
+      }
+
+      #blockBar1 {
+        background-color: var(--Powder);
+        width: 31%;
+        height: 75px;
+        display: inline;
+        float: left;
+        margin-right: 35px;
+        margin-top: 20px;
+      }
+
+      #blockBar2 {
+        background-color: var(--Beige);
+        width: 31%;
+        height: 75px;
+        display: inline;
+        float: left;
+        margin-right: 35px;
+        margin-top: 20px;
+      }
+
+      #blockBar3 {
+        background-color: var(--Navy);
+        width: 31%;
+        height: 75px;
+        display: inline;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
+      #blockBar4, 
+      #blockBar5, {
+        background-color: var(--Beige);
+        width: 31%;
+        height: 50px;
+        display: inline;
+        float: left;
+        margin: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 75%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+
+      td,
+      th {
+        border: 3px solid var(--Mustard);
+        text-align: center;
+        padding: 40px;
+      }
+
+      tr {
+        background-color: var(--Beige);
+      }
+
+      #blockWatching {
+        background-color: var(--Mustard);
+        width: 85%;
+        height: 1500px;
+        float: left;
+      }
+
+      #containerListening {
+        width: 100%;
+        height: 575px;
+        background-color: var(--Powder);
+        clear: both;
+        position: relative;
+        padding-top: 10px;
+      }
+
+      #blockSpacerImg {
+        width: 50%;
+        height: 60%;
+        background-color: transparent;
+        padding-right: 5%;
+        display: inline;
+        float: right;
+      }
+
+      #containerReading {
+        width: 100%;
+        height: 500px;
+        background-color: transparent;
+        clear: both;
+        position: relative;
+        padding-top: 50px;
+      }
+
+      #containerConnect {
+        width: 100%;
+        height: 200px;
+        background-color: White;
+        clear: both;
+        position: relative;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <div id="Home">
+      <div id="nav">
+        <ul>
+          <li><a href="#containerThisIsMe">ABOUT ME</a></li>
+          <li><a href="#containerPhotos">PHOTOS</a></li>
+          <li><a href="#containerThisIsMe">WHAT'S NEW</a></li>
+          <li><a href="#containerConnect">CONTACT</a></li>
+        </ul>
+      </div>
+      <div id="containerMeredith">
+        <h1>Meredith</h1>
+      </div>
+      <div id="imageMere">
+        <img src="Faded.webp" alt="Crosslegged">
+      </div>
+      <h2 style="color:var(--Powder);">
+        Meredith is a full time student who leads a small group of university students in her church community. She works at a coffee shop in her spare time and loves connecting with people.
+      </h2>
+    </div>
+
+    <div id="containerThisIsMe">
+      <div id="blockB">
+        <h5 style="color: white;">Who am I?</h5>
+        <p style="color: var(--Powder);">Hey there! I'm Meredith—a dynamic individual with a passion for community, creativity, and coffee. As a dedicated leader at my local church, I foster connections and create meaningful experiences within our small group. My commitment to fostering a sense of belonging extends beyond the spiritual realm; by day, I channel my energy as a skilled barista, crafting delicious beverages that not only satisfy taste buds but also create moments of joy for each customer.</p>
+        <p style="color: var(--Powder);">Film is my canvas for inspiration, and I find endless fascination in its ability to convey emotions, tell stories, and spark conversations. This love for the cinematic arts fuels my own creativity, allowing me to approach both work and life with a unique perspective.</p>
+        <p style="color: var(--Powder);">Welcome to a space where passion meets purpose, and where every interaction is an opportunity to create something beautiful. Join me in this journey of community, creativity, and, of course, a good cup of coffee.</p>
+      </div>
+      <div id="blockC">
+        <h3 style="color: white;"><br><br>What's<br>important<br>to me?</h3>
+        <p style="color: white;">Genuine connection is at the heart of everything I do. I believe in the power of meaningful relationships, built on trust, respect, and a true understanding of one another. In a world often filled with noise, I strive to create spaces where authenticity flourishes, and connections are not just made, but deeply felt.</p>
+        </div>
+      <h6 style="color: var(--Beige);">
+        <br>A peek into<br>my photo album:
+      </h6>
+    </div>
+
+    <div id="containerPhotos">
+      <div id="blockD">
+        <img src="Italy.JPG" alt="Rome">
+      </div>
+      <div id="blockE">
+        <img src="Milan.jpg" alt="Milan river">
+      </div>
+      <div id="blockF">
+        <img src="Food.jpg" alt="Venice">
+      </div>
+      <div id="blockG">
+        <img src="windowsill.jpg" alt="Window">
+      </div>
+      <div id="blockH">
+        <img src="fireplace.jpg" alt="Fireplace">
+      </div>
+      <div id="blockI">
+        <img src="sister.jpg" alt="Sister">
+      </div>
+    </div>
+
+    <div id="containerWhatsNew">
+      <div id="blockBar1"></div>
+      <div id="blockBar2"></div>
+      <div id="blockBar3"></div>
+      <h4 style="color:var(--Charcoal);">
+        What's<br>new
+      </h4>
+      <div id="blockWatching">
+        <h4 style="color: white;">
+          with<br>you?
+        </h4>
+        <h3 style="color: white;">
+          What I've been watching:
+        </h3>
+        <table>
+          <tr>
+            <th>Movie name</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>Rating</th>
+          </tr>
+          <tr>
+            <td>Love and Other Drugs</td>
+            <td>2010</td>
+            <td>Comedy/Romance</td>
+            <td>8.0</td>
+          </tr>
+          <tr>
+            <td>The Shack</td>
+            <td>2017</td>
+            <td>Fantasy/Thriller</td>
+            <td>9.2</td>
+          </tr>
+          <tr>
+            <td>While You Were Sleeping</td>
+            <td>1995</td>
+            <td>Comedy/Romance</td>
+            <td>9.5</td>
+          </tr>
+          <tr>
+            <td>Interstellar</td>
+            <td>2014</td>
+            <td>Sci-fi/Adventure</td>
+            <td>7.5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+    <div id="containerListening">
+      <h3 style="color: var(--Navy);">
+        What I've been listening to:
+      </h3>
+      <h6 style="color:white;">
+        THE<br>HANDLE<br>BAR<br>PODCAST
+      </h6>
+      <div id="blockSpacerImg">
+        <a href="https://www.youtube.com/@thehandlebarpodcast">
+          <img src="Youtube.png" alt="Handlebar Podcast">
+        </a>
+      </div>
+    </div>
+
+    <div id="containerReading">
+      <h3 style="color: var(--Mustard);">
+        What I've been reading:</h3>
+      <div id="blockBar4"></div>
+      <div id="blockBar5"></div>
+      <p style="text-align: right; color: white;">
+        “Are two sparrows sold for a penny? Yet not one of them will fall to the ground outside your Father’s care. And even the very hairs of your head are numbered. So don’t be afraid; you are worth more than many sparrows”
+      </p>
+      <p style="text-align: right; color: white;">
+        Matthew 10:29-31
+      </p>
+    </div>
+
+    <div id="containerConnect">
+      <h2 style="color: var(--Powder);"><a href="mailto:mr6mille@uwaterloo.com">Send me an email!</a></h2>
+    </div>
+  </body>
+</html>
